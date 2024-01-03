@@ -39,9 +39,6 @@ function highlightElement(value) {
 function calculateMainDiagonalSum(matrix) {
     let sum = 0;
     const highlightedElements = [];
-
-    document.write('<br>calculateMainDiagonalSum ');
-
     for (let i = 0; i < matrix.length; i++) {
         const element = matrix[i][i];
         sum += element;
@@ -54,7 +51,7 @@ function calculateMainDiagonalSum(matrix) {
 
 // Розрахунок та вивід суми головної діагоналі
 const mainDiagonalSum = calculateMainDiagonalSum(matrix);
-document.write(`<br>Сума головної діагоналі: ${mainDiagonalSum}</br>`);
+document.write(`Сума головної діагоналі: ${mainDiagonalSum}</br>`);
 
 
 // ------------------------------------------------------
@@ -72,7 +69,7 @@ function calculateSecondaryDiagonalSum(matrix) {
 }
 // Розрахунок та вивід суми побічної діагоналі
 const secondaryDiagonalSum = calculateSecondaryDiagonalSum(matrix);
-document.write('<br>Cума побічної діагоналі: ' + secondaryDiagonalSum);
+document.write(`Cума побічної діагоналі: ${secondaryDiagonalSum}</br>`);
 
 // // ------------------------------------------------------
 function calculateUpperRightHalfSumWithoutMain(matrix) {
@@ -93,7 +90,7 @@ function calculateUpperRightHalfSumWithoutMain(matrix) {
 
 // Сума половини матриці без головної діагоналі зверху справа
 const upperRightHalfSum = calculateUpperRightHalfSumWithoutMain(matrix);
-document.write('<br>Сума половини матриці без головної діагоналі зверху зправа: ' + upperRightHalfSum);
+document.write(`Сума половини матриці без головної діагоналі зверху зправа: ${upperRightHalfSum}</br>`);
 
 // // ------------------------------------------------------
 
@@ -113,7 +110,7 @@ function calculateUpperRightHalfSumWithMain(matrix) {
 }
 // Сума половини матриці з головною діагоналлю зверху справа
 const upperRightHalfSumWithMain = calculateUpperRightHalfSumWithMain(matrix);
-document.write('<br>Сума половини матриці з головною діагоналлю зверху зправа: ' + upperRightHalfSumWithMain);
+document.write(`Сума половини матриці з головною діагоналлю зверху зправа: ${upperRightHalfSumWithMain}</br>`);
 
 // // ------------------------------------------------------
 
@@ -133,7 +130,7 @@ function calculateLowerLeftHalfSumWithoutMain() {
 }
 // Сума половини матриці без головної діагоналі знизу зліва
 const lowerLeftHalfSumWithoutMain = calculateLowerLeftHalfSumWithoutMain(matrix);
-document.write('<br>Сума половини матриці без головної діагоналі знизу зліва: ' + lowerLeftHalfSumWithoutMain);
+document.write(`Сума половини матриці без головної діагоналі знизу зліва: ${lowerLeftHalfSumWithoutMain}</br>`);
 // // ------------------------------------------------------
 
 function calculateLowerLeftHalfSumWithMain() {
@@ -153,7 +150,7 @@ function calculateLowerLeftHalfSumWithMain() {
 
 // Сума половини матриці з головною діагоналлю знизу зліва
 const lowerLeftHalfSumWithMain = calculateLowerLeftHalfSumWithMain(matrix);
-document.write('<br>Сума половини матриці з головною діагоналлю знизу зліва: ' + lowerLeftHalfSumWithMain);
+document.write(`Сума половини матриці з головною діагоналлю знизу зліва: ${lowerLeftHalfSumWithMain}</br>`);
 
 // // ------------------------------------------------------
 
@@ -176,7 +173,7 @@ function calculateUpperLeftHalfSumWithoutSecondary() {
 }
 // Сума половини матриці без побічної діагоналі зверху зліва
 const upperLeftHalfSumWithoutSecondary = calculateUpperLeftHalfSumWithoutSecondary(matrix);
-document.write('<br>Сума половини матриці без побічної діагоналі зверху зліва: ' + upperLeftHalfSumWithoutSecondary);
+document.write(`Сума половини матриці без побічної діагоналі зверху зліва: ${upperLeftHalfSumWithoutSecondary}</br>`);
 
 // // ------------------------------------------------------
 
@@ -198,7 +195,7 @@ function calculateUpperLeftHalfSumWithSecondary() {
 }
 // Сума половини матриці з побочною діагоналлю зверху зліва
 const upperLeftHalfSumWithSecondary = calculateUpperLeftHalfSumWithSecondary(matrix);
-document.write('<br>Сума половини матриці з побічною діагоналлю зверху зліва: ' + upperLeftHalfSumWithSecondary);
+document.write(`Сума половини матриці з побічною діагоналлю зверху зліва: ${upperLeftHalfSumWithSecondary}</br>`);
 
 // // ------------------------------------------------------
 
@@ -220,7 +217,7 @@ function calculateLowerRightHalfSumWithoutSecondary(matrix) {
 }
 // Сума половини матриці без побічної діагоналі знизу справа
 const lowerRightHalfSumWithoutSecondary = calculateLowerRightHalfSumWithoutSecondary(matrix);
-document.write('<br>Сума половини матриці без побічної діагоналі знизу зправа: ' + lowerRightHalfSumWithoutSecondary);
+document.write(`Сума половини матриці без побічної діагоналі знизу зправа: ${lowerRightHalfSumWithoutSecondary}</br>`);
 
 // // ------------------------------------------------------
 function calculateUpperRightSquareSum(matrix) {
@@ -242,7 +239,7 @@ function calculateUpperRightSquareSum(matrix) {
 }
 // Сума квадрата верхнього правого кута
 const upperRightSquareSum = calculateUpperRightSquareSum(matrix);
-document.write('<br>Сума квадрата верхнього правого кута: ' + upperRightSquareSum);
+document.write(`Сума квадрата верхнього правого кута: ${upperRightSquareSum}</br>`);
 
 // // ------------------------------------------------------
 function calculateLowerLeftSquareSum(matrix) {
@@ -264,7 +261,7 @@ function calculateLowerLeftSquareSum(matrix) {
 
 // Сума квадрата низ ліво
 const lowerLeftSquareSum = calculateLowerLeftSquareSum(matrix);
-document.write('<br>Сума квадрата низ ліво: ' + lowerLeftSquareSum);
+document.write(`Сума квадрата низ ліво: ${lowerLeftSquareSum}</br>`);
 
 // // ------------------------------------------------------
 
@@ -287,7 +284,7 @@ function calculateRowSum(matrix) {
 }
 // Сума строки с
 const rowSum = calculateRowSum(matrix);
-document.write(`<br>Сума строки ${rowForSum}: ${rowSum}`);
+document.write(`Сума строки ${rowForSum}: ${rowSum}`);
 
 // // ------------------------------------------------------
 
@@ -309,7 +306,7 @@ function calculateColumnSum(matrix) {
 
 // Сумма стовпця k
 const columnSum = calculateColumnSum(matrix);
-document.write(`<br>Сумма стовпця ${columnIndex}: ${columnSum}<br>`);
+document.write(`Сумма стовпця ${columnIndex}: ${columnSum}<br>`);
 
 
 
